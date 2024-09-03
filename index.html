@@ -15,31 +15,27 @@
             <img src="/images/logo.png" alt="Capelo e diploma">
             <h1> Calculador de Medias </h1>
         </header>
-        <form id="form-atividade" action="">
+        <form id="form-atividade">
             <input  id="nome-atividade" type="text" required placeholder="Nome Da Atividade">
             <input  id="nota-atividade" type="number" required placeholder="Nota da atividade" min="0" max="10">
-            <button>Adicionar + </button>
+            <button type="submit">Adicionar + </button>
         </form>
         <table cellspacing="0">
             <thead>
                 <tr>
-                    <th>Nome da Arividade</th>
-                    <th>Not da Atividade</th>
+                    <th>Nome da Atividade</th>
+                    <th>Nota da Atividade</th>
                     <th> Aprovado?</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td> Atividade 1</td>
-                    <td>7</td>
-                    <td> <img src="/images/aprovado.png" alt="emoji festejando"></td>
-                </tr>
+                
             </tbody>
             <tfoot>
                 <tr>
                     <td>Media Final</td>
-                    <td>7</td>
-                    <td><span class="resultado aprovado"> Aprovado</span></td>
+                    <td id="media-final-valor">--</td>
+                    <td id="media-final-resultado"><span class="resultado aprovado">--</span></td>
                 </tr>
             </tfoot>
         </table>
